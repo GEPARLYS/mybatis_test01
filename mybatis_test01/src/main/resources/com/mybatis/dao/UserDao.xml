@@ -6,4 +6,8 @@
     <select id="findAll" resultType="com.mybatis.pojo.User">
         select * from t_user
     </select>
+
+    <select id="findByUid" parameterType="int" resultType="com.mybatis.pojo.User">
+        select * from t_user where uid = #{uid}
+    </select>
 </mapper>
